@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header::before{
+            content: "";
+            background:  url('dash2.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        h1{
+            font-size: 45px;
+            text-align: center;
+        }
+
+        .search{
+            display: flex;
+            justify-content: center;
+
+            margin: 5px;
+            padding: 2px;
+
+        }
+
+        .s-box{
+            height: 30px;
+            width: 275px;
+            text-align: center;
+        }
+
+        .container{
+            height: 75vh;
+            width: 25%;
+            /* border: 2px solid red; */
+            /* this margin was used for center the container  */
+            margin: 2px auto;       
+            
+            display: flex;
+            
+            flex-flow: column wrap;
+
+            justify-content: center;
+        }
+
+        .course{
+            
+            /* background-color: teal; */
+            border: 2px solid white;
+            
+            margin: 5px;
+            padding: 2px; 
+
+            display: flex;    
+
+            flex-flow: row wrap;
+            flex-basis: 30px;
+            justify-content: space-between;
+            align-content: center;       
+        }
+        .abtn{
+            border: 2px solid rgb(138, 138, 138);
+            border-radius: 5px;
+
+            text-align: center;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <div class="search">
+        <input type="text" class="s-box" placeholder="Search Course">
+    </div>
+    
+    <div class="container">
+
+        <div class="course" id="course1">
+            IT Engineering
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course2">
+            Computer Science and Engineering
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course3">
+            Mechanical Engineering
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course4">
+            Electrical Engineering
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course5">
+            Business Process Management
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course6">
+            Accounting Management
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course7">
+            Administrative Management
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course8">
+            Assotiation Management
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course9">
+            Biotechnology Management
+            <input type="button" class="abtn" value="Apply">
+        </div>
+        <div class="course" id="course10">
+            Brand Management
+            <input type="button" class="abtn" value="Apply">
+        </div>
+    </div>
+</body>
+
+</html>

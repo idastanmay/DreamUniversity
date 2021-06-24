@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply New Course</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header::before{
+            content: "";
+            background:  url('back.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        section{
+            margin: 10px;
+            padding: 25px;
+
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            border: 2px solid white;
+
+            font-size: 1.2rem;
+
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            /* align-items: ; */
+        }
+        form:hover{
+            border-color: dodgerblue;
+            box-shadow: 0 0 8px 0 dodgerblue;
+        }
+
+        .box{
+            width: 95%;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            margin: 4px 0;
+            outline: none;
+            padding: 4px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .box:focus{
+            border-color: dodgerblue;
+            box-shadow: 0 0 8px 0 dodgerblue;
+        }
+
+        fieldset{
+            margin: 5px;
+        }
+        .data{
+            margin: 5px;
+            padding: 5px;
+        }
+        .enter{
+            margin: 2px;
+            padding: 2px;
+
+            display: flex;
+            flex-flow: row wrap;
+
+            justify-content: space-evenly;
+        }
+        .enter input{
+            width: 35%;
+            border: 1px solid rgb(131, 129, 129);
+            border-radius: 4px;
+            margin: 4px 0;
+            padding: 4px;
+            outline: none;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .enter input:hover{
+            border-color: dodgerblue;
+            box-shadow: 0 0 8px 0 dodgerblue;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Computer Science And Engineering</h1>
+        </div>
+    </header>
+
+    <section>
+        <form action="newcourse.php">
+            <div class="data">
+                FIRST NAME * <input type="text" class="box" placeholder="Enter Your First Name">
+            </div>
+            <div class="data">
+                LAST NAME * <input type="text" class="box" placeholder="Enter Your Last Name">
+            </div>
+            <div class="data">
+                EMAIL * <input type="email" class="box" placeholder="Enter Your Email">
+            </div>
+            <div class="data">
+                MOBILE NO. * <input type="number" class="box" placeholder="Enter Your Mobile No.">
+            </div>
+            <div class="gdata">
+                <fieldset>
+                    <legend>GENDER *</legend>
+                    Male <input type="radio" name="male">
+                    Female <input type="radio" name="female">
+                </fieldset>
+            </div>
+            <div class="data">
+                <label for="">OCCUPATION * </label>
+                <select name="" id="" class="box">
+                    <option value="">Student</option>
+                    <option value="">Salaried</option>
+                    <option value="">Self Employed</option>
+                </select>
+            </div>
+            <div class="enter">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
